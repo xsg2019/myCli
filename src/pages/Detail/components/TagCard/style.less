@@ -1,0 +1,86 @@
+.tag-card {
+    width: 33.33%;
+    margin-right: @gutter-distance;
+    
+    &:last-child{
+        margin-right: 0;
+    }
+    dl {
+        background: #fff;
+        box-shadow:@box-shadow-1;
+        height: 110px;
+        border-radius: 3px;
+        
+
+        dt {
+            
+            float: left;
+            width: 30%;
+            height: 110px;
+            text-align: center;
+            border-radius: 3px 0 0 3px;
+            font-weight: normal;
+
+            .iconfont {
+                color: #fff;
+                font-size: 74px;
+                font-weight: normal;
+                text-shadow:0 2px 2px  rgba(0,0,0,0.5);
+            }
+
+
+        }
+
+        dd {
+            display: block;
+            margin-left: 35%;
+            position: relative;
+            color: #222d32;
+            padding-top: 10px;
+            height: 100%;
+
+
+
+
+            .iconfont {
+                position: absolute;
+                right: 10px;
+                font-size: 20px;
+                color: #222d32;
+                display: inline-block;
+                cursor: pointer;
+                height: 21px;
+                width: 28px;
+            }
+
+            p {
+                display: block;
+                font-size: 14px;
+                margin-bottom: 5px;
+                margin-top: 15px;
+            }
+
+            h5 {
+                display: block;
+                margin: 0;
+                font-size: 24px;
+            }
+        }
+
+    }
+
+}
+
+.qm-popover-card--item {
+    .ant-popover-inner {
+        border-top: 4px solid @primary-color;
+    }
+
+    .ant-popover-content {
+        .ant-popover-arrow {
+            border-left-color: @primary-color;
+            border-top-color: @primary-color;
+        }
+    }
+
+}

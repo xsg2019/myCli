@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta name="Keywords" content="QuestMobile,TRUTH-极速版" />
+    <title>QuestMobile TRUTH-极速版</title>
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="//cdn.questmobile.cn/ui/logo/img/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.questmobile.cn/ui/icon/2020/iconfont.css"
+    />
+    <script defer>
+      var truthRoutes = JSON.parse(window.localStorage.getItem("truth-routes"));
+      if (truthRoutes) {
+        var isAuth = truthRoutes.find((item) => item === "/flash");
+        if (!isAuth) {
+          window.location.href = "/";
+        }
+      }
+    </script>
+    <script
+      charset="UTF-8"
+      type="text/javascript"
+      src="//cstaticdun.126.net/load.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

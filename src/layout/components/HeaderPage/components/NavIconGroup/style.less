@@ -1,0 +1,206 @@
+.navicongroup-container {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  height: 100%;
+  .qm-notice--container {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  a {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    padding-top: 5px;
+    &:last-child {
+      margin-right: 10px;
+    }
+  }
+  i {
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .navicongroup {
+    font-size: 26px;
+    color: @primary-color;
+    display: inline-block;
+    text-shadow: 0 3px 3px #000;
+    height: 26px;
+    line-height: 26px;
+    &.active {
+      color: @color-ffcc03;
+      text-shadow: 0 0px 10px @color-ffcc03;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        overflow: hidden;
+        background: @color-ffcc03;
+        position: absolute;
+        left: -2px;
+        bottom: -21px;
+      }
+      .ant-tooltip-inner {
+        min-width: 44px;
+        text-align: center;
+      }
+    }
+  }
+
+  .navicongroup.icon-collect .ant-tooltip-inner {
+    min-width: 66px;
+  }
+
+  .navicongroup div {
+    text-shadow: none;
+  }
+
+  .ant-popover-content {
+    .ant-popover-arrow {
+      border-left-color: @primary-color;
+      border-top-color: @primary-color;
+    }
+
+    .ant-popover-inner {
+      border-top: 3px solid @primary-color;
+      border-radius: 4px;
+    }
+  }
+
+  .icon-notice {
+    .ant-popover-title {
+      display: block;
+      padding: 10px 15px;
+      height: 100%;
+      overflow: hidden;
+
+      h3 {
+        font-size: 16px;
+        color: #111;
+        margin: 0;
+        line-height: 24px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        float: left;
+        color: @color-ffcc03;
+        width: 350px;
+        line-height: 31px;
+      }
+
+      em {
+        display: inline-block;
+        margin-left: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+        color: #969696;
+        font-style: normal;
+        border-left: 1px solid #969696;
+        padding-top: 5px;
+        line-height: 16px;
+        margin-top: 4px;
+        width: 100px;
+        text-align: right;
+      }
+    }
+
+    .ant-popover-inner-content {
+      p {
+        display: block;
+        margin: 0;
+        line-height: 24px;
+        white-space: normal;
+        word-break: break-all;
+      }
+
+      .btn-more {
+        text-align: center;
+        display: inline-block;
+        line-height: 26px;
+        border-radius: 3px;
+        background: -webkit-linear-gradient(
+          left,
+          #fcad1d 40%,
+          @primary-color 100%
+        );
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        padding: 0 10px;
+        margin: 10px 15px 0 0;
+
+        &:hover {
+          background: #111;
+        }
+      }
+    }
+  }
+
+  .icon-user {
+    .ant-popover-title {
+      text-align: center;
+      height: 50px;
+      overflow: hidden;
+      padding: 0px 15px;
+    }
+    h3 {
+      font-size: 12px;
+      color: #222;
+      margin: 0;
+      line-height: 50px;
+      display: inline-block;
+      font-weight: normal;
+    }
+    .ant-popover-inner-content {
+      text-align: center;
+      p {
+        margin: 0;
+      }
+      .btn-exit {
+        display: inline-block;
+        line-height: 26px;
+        border-radius: 3px;
+        background: -webkit-linear-gradient(
+          left,
+          #fcad1d 40%,
+          @primary-color 100%
+        );
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        padding: 0 10px;
+        &:hover {
+          background: #111;
+        }
+      }
+    }
+  }
+
+  .icon-cn,
+  .icon-en {
+    .ant-tooltip {
+      width: 110px;
+      margin-top: -25px;
+      text-align: center;
+    }
+  }
+}
+
+//en
+.qm-layout--en .navicongroup-container .navicongroup.active .ant-tooltip-inner {
+  min-width: 44px;
+}
+
+.qm-layout--en
+  .navicongroup-container
+  .navicongroup.icon-collect
+  .ant-tooltip-inner {
+  min-width: 80px;
+}

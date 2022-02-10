@@ -1,0 +1,147 @@
+.ant-input-group-wrapper {
+  .ant-input {
+    background: #2e363f;
+    color: #fff;
+    border: 1px solid #2e363f;
+    box-shadow: 0 3px 3px #111;
+    height: 32px;
+  }
+
+  .ant-input:focus,
+  .ant-input:hover,
+  .ant-input-focused {
+    border: 1px solid #2e363f;
+    border-right: 0;
+  }
+
+  .ant-input-search-button {
+    background: -webkit-linear-gradient(left, #fcad1d 10%, #ffcc03 100%);
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 3px 3px #111;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 10px;
+    border: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ant-input-search-button:hover {
+    background: -webkit-linear-gradient(left, #ffcc03 10%, #fcad1d 100%);
+  }
+}
+
+// .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+//   background-color: #fff;
+// }
+
+.qm-search-box {
+  display: flex;
+  position: absolute;
+  top: 55px;
+  left: 48px;
+  width: 520px;
+  margin: 0;
+  font-size: 12px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 4px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.175);
+  overflow: hidden;
+  transition: all 0.2s;
+
+  b {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+
+    .fa {
+      color: @primary-color;
+      margin-right: 10px;
+      font-size: 20px;
+      position: relative;
+      top: -3px;
+    }
+  }
+
+  .applist {
+    width: 200px;
+    height: 335px;
+    background: #fff;
+  }
+
+  .companylist {
+    height: 335px;
+    background: #f4f4f4;
+    width: calc(100% - 200px);
+    li a {
+      padding: 0 5px;
+    }
+  }
+  ul {
+    display: block;
+    padding: 0;
+    max-height: 280px;
+    min-height: 280px;
+    overflow-y: auto;
+    margin-right: 10px;
+
+    li {
+      display: block;
+      margin: 8px 15px;
+
+      a {
+        display: block;
+        border: 1px solid #dfdfdf;
+        border-radius: 3px;
+        line-height: 30px;
+        color: #222d32;
+        transition: all 0.2s ease-out;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+          float: left;
+          border-radius: 2px;
+          margin: 3px 5px 3px 5px;
+        }
+
+        i.active {
+          font-style: normal;
+          color: @primary-color;
+        }
+      }
+    }
+  }
+
+  .applist,
+  .companylist {
+    position: relative;
+
+    .ant-empty {
+      margin-top: 90px;
+      min-width: 180px;
+
+      .ant-empty-image {
+        margin-top: 60px;
+        height: auto;
+        text-align: center;
+        img {
+          width: 70px;
+          height: auto;
+        }
+      }
+      .ant-empty-description {
+        color: #999;
+        line-height: 20px;
+        margin-top: 0px;
+      }
+    }
+  }
+}

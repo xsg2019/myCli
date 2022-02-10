@@ -1,0 +1,301 @@
+.banner-container {
+  background: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 40px;
+  z-index: 998;
+  position: fixed;
+  top: 70px;
+
+  .banner-box {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    // h2 {
+    //   top: 5px;
+    //   position: relative;
+    //   left: 5px;
+    //   display: inline;
+    // }
+
+    a {
+      color: #333;
+    }
+
+    .banner {
+      display: flex;
+      position: absolute;
+      right: 20px !important;
+    }
+
+    .ant-btn {
+      font-size: 12px;
+    }
+    .banner {
+      .system-dropdown {
+        position: relative;
+
+        div:nth-child(2) {
+          right: 0;
+          left: auto !important;
+        }
+        .ant-select-dropdown {
+          left: auto !important;
+          right: 0 !important;
+        }
+      }
+
+      .ant-select {
+        &-selector {
+          border-radius: 3px;
+          background: #f4f4f4;
+          color: #222;
+          padding-left: 15px;
+          padding-right: 20px;
+          line-height: 26px;
+          height: 28px;
+          border: 1px solid #ddd;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+          display: inline-flex;
+
+          .ant-select-selection-item {
+            line-height: 26px;
+            padding-right: 23px;
+          }
+
+          &:hover {
+            border: 1px solid #ccc;
+          }
+        }
+        &-arrow {
+          display: inline-flex;
+          height: 27px;
+          right: 16px;
+          top: 0px;
+          padding-right: 11px;
+          margin: 0;
+          margin-right: 10px;
+
+          .qm-ostype--divider {
+            right: 0;
+            top: 0;
+            float: left;
+            height: 26px;
+            border-left: 1px dotted #ddd;
+            margin: 0;
+            margin-left: 5px;
+          }
+
+          .anticon-caret-down {
+            color: #222222 !important;
+            padding: 0 10px;
+
+            svg {
+              position: relative;
+              top: 8px;
+            }
+          }
+        }
+
+        &-dropdown {
+          .ant-select-item {
+            border-bottom: 1px solid #f2f2f2;
+            background: #fff;
+
+            &:hover {
+              background: #f2f2f2;
+            }
+          }
+
+          .ant-select-item:last-child {
+            border: 0;
+          }
+
+          .ant-select-item-option-selected {
+            color: @color-ffcc03;
+            &:hover {
+              background: #f2f2f2;
+              color: @color-ffcc03;
+            }
+          }
+        }
+      }
+
+      .ant-select-dropdown {
+        width: 175px !important;
+      }
+    }
+
+    .date-picker-wrapper {
+      margin-top: 6px;
+      margin-left: 10px;
+    }
+
+    .appList {
+      margin-top: 6px;
+      margin-left: 10px;
+      .ant-popover-placement-bottomRight {
+        .ant-popover-content {
+          .ant-popover-arrow {
+            border-left-color: transparent;
+            border-top-color: transparent;
+          }
+        }
+      }
+
+      .ant-btn {
+        border: 1px solid #ddd;
+        background: #f4f4f4;
+        color: #222;
+        border-radius: 3px;
+        margin-top: 0px;
+        padding: 0 10px;
+        line-height: 1;
+        height: 28px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        &:hover {
+          border: 1px solid #ccc;
+        }
+
+        .icon-gailan {
+          position: relative;
+          top: 6px;
+          float: left;
+        }
+
+        .ant-divider-vertical {
+          border-left: 1px dotted #ddd;
+          top: 0;
+        }
+      }
+
+      .catagory-list {
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #ddd;
+        background: #f4f4f4;
+        color: #222;
+        border-radius: 3px;
+        margin-top: 0px;
+        padding: 0 10px;
+        cursor: pointer;
+
+        &:hover {
+          border: 1px solid #bbb;
+        }
+      }
+    }
+
+    .appCompare {
+      margin-top: 6px;
+
+      .ant-btn {
+        border: 1px solid #4d4d4d;
+        background: #727272;
+        color: #fff;
+        border-radius: 3px;
+        margin-top: 0px;
+        padding: 0 15px;
+        transition: none;
+        line-height: 28px;
+        height: 28px;
+
+        &:hover {
+          border: 1px solid #dc881d;
+          background: -webkit-linear-gradient(left, #fcad1d 40%, #ffcc03 100%);
+        }
+      }
+    }
+  }
+}
+
+.banner-container {
+  .tab-left {
+    position: absolute;
+    display: flex;
+    transition: all 0.2s;
+
+    .bnback {
+      margin-right: 10px;
+      a {
+        display: block;
+        line-height: 24px;
+        margin-top: 9px;
+        border-right: 1px solid #ccc;
+        padding: 0 10px 0 0;
+        color: #666;
+        font-size: 14px;
+
+        &:hover {
+          color: #000;
+        }
+
+        i {
+          margin-right: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+    .app-icon {
+      display: flex;
+      position: relative;
+      top: -2px;
+      img {
+        border-radius: 3px;
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+        align-self: flex-end;
+      }
+
+      h2 {
+        font-size: 16px;
+        margin: 0;
+        align-self: flex-end;
+        margin-right: 5px;
+        max-width: 500px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: unset;
+      }
+    }
+    .collect,
+    .contrast {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+      margin-left: 5px;
+      text-align: center;
+      line-height: 30px;
+
+      &:hover {
+        color: @primary-color;
+        text-decoration: none;
+        outline: 0;
+      }
+
+      i {
+        font-size: 22px;
+        position: relative;
+        top: 1px;
+      }
+    }
+
+    .collect-active,
+    .contrast-active {
+      color: @primary-color;
+    }
+
+    .qm-comparison--back {
+      line-height: 40px;
+      .icon {
+        font-size: 22px;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}

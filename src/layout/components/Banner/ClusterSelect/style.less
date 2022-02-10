@@ -1,0 +1,53 @@
+@input-width: 40px;
+@input-height: 26px;
+
+.app-growth-selector {
+  position: absolute;
+  left: 245px;
+  top: 0px;
+  line-height: 40px;
+  transition:@transition;
+
+  .ant-select {
+    .ant-select-selector {
+      height: 28px;
+      border-radius: 3px;
+      margin-top: 6px;
+    }
+  }
+
+  .qm-custom--seleted {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .button {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      .inputerror {
+        color: @error-color;
+        margin-top: 4px;
+      }
+    }
+    
+
+    &__inner {
+      width: 100%;
+      text-align: center;
+      .select-input--start,
+      .select-input--end {
+        height: @input-height;
+        width: @input-width;
+      }
+      .to,
+      .dw {
+        line-height: 26px;
+      }
+    
+      
+    }
+  }
+}

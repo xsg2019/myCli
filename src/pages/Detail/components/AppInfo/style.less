@@ -1,0 +1,183 @@
+
+.qm-appinfo {
+    .competition-list {
+        padding-left:20px;
+    }
+
+    .ant-row{
+        background: #fff;
+        box-shadow:@box-shadow-1;
+        padding: 20px 10px 20px 20px;
+        margin: 10px 0 15px 0;
+    }
+
+
+   
+    .app-icon {
+        width: 52px;
+
+        img {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+        }
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+
+            .appName {
+                font-size: 20px;
+            }
+
+            .btn-error {
+                display: block;
+                padding: 0 0px;
+                color: #d62121;
+                line-height: 26px;
+                text-align: center;
+                font-weight: normal;
+                position: absolute;
+                right: 20px;
+                top: 2px;
+
+                .iconfont {
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+        .categroy-list {
+            display: flex;
+            padding:0;
+
+            li {
+                line-height: 24px;
+                margin-right: 20px;
+            }
+
+            .caret-right {
+                margin-right: 5px;
+                position: relative;
+                top: -2px;
+            }
+
+        }
+
+        .rank-list {
+            padding-top:10px;
+
+            dt {
+
+                font-size: 20px;
+                font-weight: normal;
+
+                .iconfont {
+                    font-size: 24px;
+                    position: relative;
+                    top: 2px;
+                }
+
+            }
+
+            dd {
+                float: left;
+                line-height: 27px;
+                width: 240px;
+                margin-right: 15px;
+                background: #f9f9f9;
+                padding: 0 10px;
+                border-radius: 3px;
+                margin-top: 5px;
+
+                em {
+                    float: right;
+                    color: #d62121;
+                    font-style: normal;
+                    width: auto;
+                    line-height: 26px;
+                    padding-left: 15px;
+                    text-align: left;
+
+                    .iconfont {
+                        font-size:16px;
+                        margin-right:0px;
+                        top:2px;
+                    }
+                }
+
+                .iconfont {
+                    font-size: 12px;
+                    margin-right: 5px;
+                    position: relative;
+                    top: -1px;
+                }
+
+            }
+        }
+
+
+
+
+    }
+
+    .competition {
+        dt {
+            font-size: 20px;
+            font-weight: normal;
+            display: block;
+
+            .iconfont {
+                font-size: 22px;
+                position: relative;
+                top: 2px;
+            }
+        }
+
+        dd {
+            display: block;
+            a{
+                display: inline-block;
+                margin-right: 12px;
+                margin-top: 12px;
+                img{
+                    border-radius: 9px;
+                    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+                }
+            }
+        }
+    }
+}
+
+
+
+.caret-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-left: 4px dashed;
+    border-left: 4px solid \9;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+
+
+
+//en table 
+.qm-layout--en {
+
+    .qm-appinfo .main-info .rank-list dd {
+        width:auto;
+    }
+  
+  }

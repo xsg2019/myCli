@@ -1,0 +1,394 @@
+.qm-collect-container {
+  height: 100%;
+  margin-top: 0;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+.collectRight {
+  padding-top: 15px;
+  width: 100%;
+
+  .tableBox {
+    margin: 10px 30px;
+  }
+  .qm-table-pagination {
+    padding: 20px 0 !important;
+  }
+
+  .tableBox .tableRight table tr th:first-child {
+    padding-right: 25px;
+  }
+
+  .ant-empty {
+    margin-top: -10px !important;
+
+    .ant-empty-description {
+      color: #999;
+    }
+  }
+}
+
+.collectLeft {
+  width: 300px;
+  height: 100%;
+  padding: 15px 10px 0 10px;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+  min-height: 640px;
+
+  .ant-btn {
+    i {
+      padding-right: 5px;
+    }
+  }
+}
+
+.form-group {
+  text-align: center;
+
+  .ant-btn:last-child {
+    border-radius: 3px;
+    padding: 0 20px;
+    margin: 10px 10px 0 10px;
+  }
+
+  .ant-btn:first-child {
+    background: #a2a2a2;
+    color: #fff;
+    border: 1px solid #919191;
+    padding: 0 20px;
+    margin: 10px 10px 0 10px;
+  }
+}
+
+.sep-group-item {
+  position: relative;
+  .btn-group {
+    .text-group {
+      width: 90%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      float: left;
+    }
+  }
+}
+.group-list-container {
+  font-size: 12px;
+  ul {
+    display: flex;
+    height: 175px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    padding: 10px 20px;
+    text-align: left;
+    background: #f5f5f5;
+    flex-wrap: wrap;
+    align-content: baseline;
+    .empty {
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+      color: #999;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    li {
+      width: 50%;
+      display: block;
+      padding: 2px 0;
+      float: left;
+      height: 26px;
+    }
+  }
+  .ant-btn {
+    margin: 10px auto;
+  }
+}
+
+.collectLeft ul {
+  display: block;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.collectLeft ul.groupList {
+  max-height: 370px;
+  overflow-y: auto;
+  margin-top: 0;
+}
+
+.collectLeft ul li {
+  display: block;
+  line-height: 38px;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+  font-size: 14px;
+}
+.collectLeft ul li {
+  .iconfont,
+  .fa {
+    float: left;
+    font-size: 16px;
+    position: relative;
+    top: 11px;
+    margin-right: 5px;
+    line-height: 1;
+  }
+}
+
+.collectLeft ul.groupList li:last-child {
+  border-bottom: 0;
+}
+
+.collectLeft ul li.active {
+  border-bottom: 0;
+  background: #374850;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.collectLeft ul li.lastdelele {
+  border-bottom: 0;
+}
+
+.collectLeft ul li.lastdelele a {
+  background: #f2f2f2;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.icon-shanchu {
+  &:hover {
+    color: @primary-color;
+    cursor: pointer;
+  }
+}
+
+.collectLeft ul li.lastdelele.active a {
+  border-bottom: 0;
+  background: #374850;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.collectLeft ul li a {
+  color: #374850;
+  display: block;
+  padding: 0 10px 0 20px;
+}
+
+.collectLeft ul li a i.fa {
+  margin-right: 8px;
+}
+
+.collectLeft ul li a:hover {
+  color: @primary-color;
+}
+
+.collectLeft ul li.active a {
+  color: #fff;
+}
+.collectLeft ul li a.edit {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 26px;
+  top: 2px;
+  padding: 0px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.collectLeft ul li a.delete {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  padding: 0px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.collectRight .bn {
+  padding: 0 30px;
+}
+
+.collectRight a.btn-analysed {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #5b5b5b;
+  background: #727272;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+.collectRight {
+  .ant-empty h4 {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 30px;
+    margin: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+}
+
+.collectRight a.btn-remove {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #c17918;
+  background: @primary-color;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+.collectRight .tableBox .tableRight table thead tr th:last-child {
+  border-radius: 0 10px 0 0;
+  border-right: 0;
+}
+
+.collectRight .tableBox table td.tdGroup {
+  padding: 10px 0;
+}
+
+.collectRight .tableBox table td .group {
+  width: 100%;
+}
+
+.collectRight .tableBox table td .group a {
+  display: block;
+  text-align: center;
+  position: relative;
+  color: #374850;
+  width: 160px;
+}
+
+.collectRight .tableBox table td .group a:hover {
+  color: @primary-color;
+}
+
+.collectRight .tableBox table td .group a i.fa {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #374850;
+}
+
+.collectRight .tableBox table td .group .dropdown-menu {
+  top: 32px;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  width: 160px;
+}
+
+.collectRight .tableBox table td .group .dropdown-menu ul {
+  display: block;
+  max-height: 175px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.collectRight .tableBox table td .group .dropdown-menu li {
+  display: block;
+  padding: 2px 0;
+}
+
+.collectRight .tableBox table td .group .dropdown-menu li label {
+  font-weight: normal;
+}
+
+.collectRight
+  .tableBox
+  table
+  td
+  .group
+  .dropdown-menu
+  li
+  label
+  input[type="checkbox"] {
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+}
+
+.collectRight .tableBox table td .group .dropdown-menu .btn-submit {
+  display: block;
+  line-height: 22px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 1px solid #c17918;
+  background: @primary-color;
+  color: #fff;
+  margin: 5px auto;
+  padding: 0 10px;
+}
+
+.ant-modal-content {
+  .ant-modal-body {
+    .ant-form {
+      .ant-form-item:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.ant-modal-content {
+  .ant-modal-close-x {
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .ant-modal-header {
+    padding: 10px 20px;
+  }
+  .ant-modal-body {
+    padding: 20px 20px;
+  }
+
+  .ant-btn {
+    margin-top: 20px !important;
+  }
+}
+
+//en
+.qm-layout--en {
+  .collectLeft ul li.lastdelele {
+    line-height: 20px;
+
+    a {
+      text-indent: -24px;
+      padding-left: 45px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      i {
+        margin-right: 24px;
+        top: 3px;
+      }
+    }
+  }
+}

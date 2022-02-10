@@ -1,0 +1,135 @@
+@input-width: 40px;
+@input-height: 26px;
+
+.app-growth-selector {
+  position: absolute;
+  left: 245px;
+  top: 0px;
+  line-height: 40px;
+  transition:none;
+
+  .ant-select {
+
+    .ant-select-selector {
+      height: 28px;
+      line-height: 28px;
+      border-radius: 3px;
+      margin-top: 6px;
+      background:#f4f4f4;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+      display: inline-flex;
+      transition: none;
+      
+      .ant-select-selection-item {
+        padding-right:30px;
+        line-height: 26px !important;
+        transition: none;
+      }
+
+    }
+
+    &:hover {
+      color:@primary-color !important;
+
+      .anticon {
+        color: @primary-color !important;
+        transition: none;
+      }
+    }
+    
+    .ant-select-arrow {
+      height:26px;
+      top:0;
+      display: inline-flex;
+      margin-top:6px;
+      width:26px;
+      color:#222;
+
+      .ant-divider-vertical {
+        right:0;
+        top:0;
+        float:left;
+        height: 26px;;
+        border-left:1px dotted #ddd; 
+      }
+
+      .anticon  {
+        position: relative ;
+        top:8px !important;
+        right:0 !important
+      }
+    }
+
+    &-dropdown {
+      // display: block;
+
+      .ant-select-item {
+        padding-top:0;
+        padding-bottom:0;
+        min-height: 28px;
+
+     
+
+        &-option-content {
+          line-height: 28px;;
+        }
+        &:hover {
+          background:#f2f2f2;
+        }
+      }
+
+    }
+
+
+  }
+
+  .qm-custom--seleted {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .button {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      .inputerror {
+        color: @error-color;
+        margin-top: 4px;
+      }
+    }
+    
+
+    &__inner {
+      padding-top:5px;
+      width: 100%;
+      text-align: center;
+      .select-input--start,
+      .select-input--end {
+        height: @input-height;
+        width: @input-width;
+        padding-left:5px;
+        padding-right:5px;
+        text-align:center;
+      }
+      .to,
+      .dw {
+        line-height: 26px;
+        margin-left:5px;
+      }
+    
+      
+    }
+  }
+}
+
+
+.ant-select-single.ant-select-open .ant-select-selection-item {
+  opacity: 1 !important;
+  color:@primary-color !important;
+  
+}
+.ant-select-single.ant-select-open .ant-select-arrow {
+  color:@primary-color !important;
+}

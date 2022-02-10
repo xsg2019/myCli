@@ -1,0 +1,110 @@
+.btn-group-vertical {
+    display: flex;
+
+
+    .btn {
+        border: 1px solid #222d32;
+        background: #374850;
+        color: #fff;
+        padding: 0px 9px;
+        font-size: 12px;
+        width: 34px;
+        height: 26px;
+        line-height:26px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+
+        &.open {
+            background: -webkit-linear-gradient(left, #fcad1d 40%, #ffcc03 100%);
+            border: 1px solid #fdab1d;
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(left, #fcad1d 40%, #ffcc03 100%);
+            border: 1px solid #fdab1d;
+        }
+
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+
+
+        &:first-child:not(:last-child) {
+            border-radius: 3px 0 0 3px;
+            border-right: 0;
+        }
+
+        &:last-child:not(:first-child) {
+            border-radius: 0 3px 3px 0;
+            border-bottom-left-radius: 0;
+        }
+
+    }
+
+  
+    button.ant-btn-primary[disabled] {
+        border: 1px solid #222d32 !important;
+        border-right: 0 !important;
+        background: #374850  !important;
+        color: #666 !important;
+        padding: 3px 9px ;
+        font-size: 12px;
+        line-height: 16px;
+        width: 34px;
+        height: 26px;
+        overflow: hidden;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3) !important;
+        transition: none;
+        border-radius: 3px 0 0 3px;
+        cursor: not-allowed;
+    }
+ 
+    
+    // .disabled{
+    //     cursor: not-allowed;
+    //     background: gray;
+    //     &:hover {
+    //         background:gray;
+    //     }
+    // }
+}
+
+
+
+
+.qm-iconpopover{
+    .qm-down--title {
+        padding: 0 5px;
+        line-height: 24px;
+        font-size: 12px;
+        color: #222d32;
+        width: 240px;
+    }
+    .qm-down--content {
+        text-align: center;
+    
+        .content {
+            padding: 0;
+            line-height: 24px;
+            color: #222d32;
+            display: flex;
+            text-align: left;
+        }
+    }
+    .qm-help--title{
+        padding:0 0px;
+        line-height: 30px;
+        font-size: 16px;
+        color: @primary-color;
+        width: 240px;
+    }
+    .qm-help--content{
+        padding: 0px;
+        line-height: 24px;
+        color: #222d32;
+        max-width: 260px;
+        max-height:340px;
+        overflow-y:auto;
+    }
+}

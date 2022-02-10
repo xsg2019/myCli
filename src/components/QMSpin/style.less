@@ -1,0 +1,49 @@
+.qm-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  
+  .circular {
+    width: 42px;
+    height: 42px;
+    margin-top: 2px;
+    animation: loading-rotate 2s linear infinite;
+  }
+  .circular {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .path {
+    animation: loading-dash 2s ease-in-out infinite;
+    stroke-dasharray: 90 120;
+    stroke-dashoffset: 0;
+    stroke-width: 3.2;
+    stroke: #ffbe14;
+    stroke-linecap: round;
+  }
+  @keyframes loading-dash {
+    0% {
+      stroke-dasharray: 0 200;
+      stroke-dashoffset: -0;
+    }
+    50% {
+      stroke-dasharray: 90 150;
+      stroke-dashoffset: -40px;
+    }
+    100% {
+      stroke-dasharray: 90 150;
+      stroke-dashoffset: -120px;
+    }
+  }
+
+  @keyframes loading-rotate {
+    to {
+      transform: rotate(0.8turn);
+    }
+  }
+}

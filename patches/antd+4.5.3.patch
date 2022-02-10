@@ -1,0 +1,74 @@
+diff --git a/node_modules/antd/es/tooltip/index.js b/node_modules/antd/es/tooltip/index.js
+index d3549a1..958965b 100644
+--- a/node_modules/antd/es/tooltip/index.js
++++ b/node_modules/antd/es/tooltip/index.js
+@@ -121,8 +121,12 @@ var Tooltip = /*#__PURE__*/React.forwardRef(function (props, ref) {
+       return;
+     } // 根据当前坐标设置动画点
+ 
++    const target = trigger.getRootDomNode();
++    const arrow = popup.querySelector(".ant-popover-arrow")
+ 
+-    var rect = domNode.getBoundingClientRect();
++    
++   
++    var rect = target.getBoundingClientRect();
+     var transformOrigin = {
+       top: '50%',
+       left: '50%'
+@@ -140,6 +144,16 @@ var Tooltip = /*#__PURE__*/React.forwardRef(function (props, ref) {
+       transformOrigin.left = "".concat(-align.offset[0], "px");
+     }
+ 
++    if (/^(top|bottom)$/.test(placement)) {
++      const { left, width } = rect;
++      const arrowOffset = left + width / 2 - popup.offsetLeft;
++      arrow.style.left = `${arrowOffset}px`;
++    } else if (/^(left|right)$/.test(placement)) {
++      const { top, height } = rect;
++      const arrowOffset = top + height / 2 - popup.offsetTop;
++      arrow.style.top = `${arrowOffset}px`;
++    }
++
+     domNode.style.transformOrigin = "".concat(transformOrigin.left, " ").concat(transformOrigin.top);
+   };
+ 
+diff --git a/node_modules/antd/lib/tooltip/index.js b/node_modules/antd/lib/tooltip/index.js
+index c890e02..2b7e8b0 100644
+--- a/node_modules/antd/lib/tooltip/index.js
++++ b/node_modules/antd/lib/tooltip/index.js
+@@ -137,7 +137,6 @@ var Tooltip = /*#__PURE__*/React.forwardRef(function (props, ref) {
+       return;
+     } // 根据当前坐标设置动画点
+ 
+-
+     var rect = domNode.getBoundingClientRect();
+     var transformOrigin = {
+       top: '50%',
+@@ -157,6 +156,26 @@ var Tooltip = /*#__PURE__*/React.forwardRef(function (props, ref) {
+     }
+ 
+     domNode.style.transformOrigin = "".concat(transformOrigin.left, " ").concat(transformOrigin.top);
++    
++    
++    const arrow = domNode.querySelector(".ant-popover-arrow")
++    
++    if(children.ref && arrow){
++
++    const rect = children.ref.current.getBoundingClientRect();
++  
++    if (/^(top|bottom)$/.test(placement)) {
++      const { left, width } = rect;
++      const arrowOffset = left + width / 2 - domNode.offsetLeft;
++      arrow.style.left = `${arrowOffset}px`;
++    } else if (/^(left|right)$/.test(placement)) {
++      const { top, height } = rect;
++      const arrowOffset = top + height / 2 - domNode.offsetTop;
++      arrow.style.top = `${arrowOffset}px`;
++    }
++
++   }
++
+   };
+ 
+   var getOverlay = function getOverlay() {

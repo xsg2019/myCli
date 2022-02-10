@@ -1,0 +1,58 @@
+.qm-datepicker-month {
+    position: relative;
+    margin-top: 6px;
+    margin-left: 45px;
+
+    .ant-picker-suffix {
+        .qm-monthpicker--divider {
+            right: 5px;
+            display: inline;
+            margin: 0;
+        }
+    }
+
+    .ant-picker {
+        width: 150px;
+    }
+
+    .ant-picker-input {
+        input {
+            text-align: center;
+        }
+    }
+}
+
+.qm-datepicker-month {
+    .input-group-addon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3.5px 12px;
+        background: #fff;
+        height: 28px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #555;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        position: absolute;
+        top: -1px;
+        left: -48px;
+
+    }
+}
+
+#root .qm-datepicker-month .ant-picker:hover {
+    border-color: #ffbe14;
+    
+    .ant-picker-input input{
+        color: #ffbe14 !important;
+    }
+    .input-group-addon{
+        border-right-color: #ffbe14;
+    }
+}

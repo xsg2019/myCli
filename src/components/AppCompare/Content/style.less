@@ -1,0 +1,256 @@
+
+.ant-drawer-body {
+  padding:20px;
+}
+
+.loading-box {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.3);
+
+  img {
+    position: absolute;
+    left: 95px;
+    top: 120px;
+  }
+}
+
+.overflow-state {
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+
+  .cont {
+    display: block;
+    position: absolute;
+    left: 25px;
+    background: #fff;
+    color: #111;
+    top: 110px;
+    margin: 0px 0 0 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 180px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    height: auto;
+  }
+}
+.cont {
+  .search-modal {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    top: 45px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    .cont {
+      display: block;
+      position: absolute;
+      left: 50%;
+      background: #fff;
+      color: #111;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0px 0 0 0px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 180px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 20px;
+      height: auto;
+    }
+  }
+  .listbox {
+    position: absolute;
+    width: 220px;
+    transition: all 0.2s;
+    margin-left:5px;
+
+    .list {
+      margin-top: 10px;
+      height: 180px;
+      overflow-y: auto;
+
+      ul {
+        padding: 0;
+        margin-bottom:0;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          height: 29px;
+          line-height: 29px;
+          border-radius: 3px;
+          background: #f4f4f4;
+          margin:0 0 5px 0;
+          padding: 0 10px;
+
+          .name {
+            width:180px;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            white-space:nowrap;
+
+            img {
+              border-radius: 3px;
+              margin: -4px 5px 0 0;
+            }
+
+            .active {
+              color: @primary-color;
+            }
+          }
+        }
+      }
+
+      .warning {
+        padding: 10px;
+        text-align: center;
+        color: #999;
+        margin-top: 30px;
+        line-height: 24px;
+      }
+    }
+
+    .bn {
+      text-align: center;
+
+      .clearall {
+        padding: 5px 10px 0px 10px;
+        text-align: center;
+        color: #999;
+        margin-top: 0px;
+        text-decoration: underline;
+        line-height: 16px;
+
+        a {
+          color: #222d32;
+          text-decoration: none;
+        }
+      }
+
+      .ant-btn-primary {
+        margin-top: 4px;
+        .num {
+          font-style: normal;
+        }
+      }
+    }
+  }
+
+  .searchbox {
+    position: absolute;
+    width: 220px;
+    transition: all 0.2s;
+    margin-left:5px;
+
+    .input {
+      display: flex;
+      justify-content: space-between;
+
+      .bnback {
+        line-height: 30px;
+        color: #111;
+        margin-left: 0;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .list {
+      margin-top: 10px;
+      height: 240px;
+      overflow-y: auto;
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        height: 29px;
+        line-height: 29px;
+        border-radius: 3px;
+        background: #f4f4f4;
+        padding: 0 10px;
+        white-space: nowrap;
+        overflow: hidden;
+
+        width: 100%;
+        .name {
+          max-width: 120px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          img {
+            border-radius: 3px;
+            margin: -4px 5px 0 0;
+          }
+
+          .active {
+            color: @primary-color;
+            background:none;
+          }
+        }
+        .added {
+          float: right;
+          color: @primary-color;
+        }
+
+        a {
+          display: none;
+
+          em {
+            display: block;
+            color: #fff;
+            background: #6c6c6c;
+            border-radius: 2px;
+            padding: 0 10px;
+            line-height: 20px;
+            font-style: normal;
+            margin-top: 5px;
+          }
+        }
+
+        &:hover {
+          a {
+            display: block;
+          }
+        }
+      }
+
+      .ant-empty {
+
+        .ant-empty-image {
+          margin-top:60px;
+          height:auto;
+
+          img {
+            width: 70px;
+            height: auto;
+          }
+        }
+        .ant-empty-description {
+          line-height:20px;
+          color:#999;
+        }
+
+      }
+
+    }
+  }
+}

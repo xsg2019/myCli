@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "es6"],
+    "outDir": "./dist/",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"],
+  "linterOptions": {
+    "exclude": ["*.json", "**/*.json"]
+  }
+}

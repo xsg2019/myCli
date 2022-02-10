@@ -1,0 +1,68 @@
+.appCompare {
+    position: fixed;
+    right: 0;
+    top: 25vh;
+
+ 
+    .ant-drawer-content-wrapper {
+        height: 380px !important;
+    }
+
+    .ant-drawer-content {
+        overflow: hidden;
+    }
+
+    .ant-drawer-header {
+        background:none;;
+        border-top:4px solid #ffbe14;
+        padding:0 20px;
+        border-radius:0;
+    }
+
+}
+
+.appButton {
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    transform: translateY(-50%);
+
+    .ant-btn {
+        width: 42px;
+        white-space: normal;
+        height: 100px;
+        font-size: 14px;
+        padding: 10px 10px;
+        padding-top:5px;
+        border-radius:3px 0 0 3px;
+        box-shadow:0 0 10px rgba(0,0,0,0.2);
+        color:#666;
+        background:#fff;
+        border:0;
+
+        &:hover {
+            background: #212226 !important;
+            color: #fff !important;
+        }
+
+        .icon-vs1 {
+            display: block;
+            font-size: 20px;
+        }   
+    }
+}
+
+
+//en 
+.qm-layout--en {
+
+    .appButton {
+        .ant-btn {
+            height:125px;
+            
+            span {
+                writing-mode: vertical-rl;
+            }
+        }
+    }
+}

@@ -1,0 +1,666 @@
+// 覆盖antd样式，不需要加!important
+
+#root {
+  font-family: 'PingFangSC-Regular','Microsoft YaHei',arial ;
+  //全局
+  .qm-global--loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+
+  dl {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  ol,
+  ul,
+  dl,
+  dd {
+    margin-bottom: 0;
+  }
+
+  .ant-layout-content {
+    transition: all 0.2s;
+  }
+
+  .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
+  .ant-row-space-between {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 40px;
+  }
+
+  //mark
+  mark {
+    color: @primary-color;
+    background: none;
+  }
+
+  //picker
+  .ant-picker {
+    background: #f4f4f4;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    padding: 0px 11px;
+
+    &-clear {
+      background: #f4f4f4;
+    }
+
+    &-input {
+      float: left;
+      height: 26px;
+
+      input {
+        text-align: center;
+      }
+    }
+    &-input-active {
+      input:focus {
+        color: #f6b202;
+      }
+    }
+
+    &-header-view {
+      button {
+        color: #222222;
+        cursor: default;
+        &:hover {
+          color: #222222;
+        }
+      }
+    }
+  }
+
+  .ant-picker:hover,
+  .ant-picker-focused {
+    border-color: #ddd;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .ant-picker-range .ant-picker-active-bar {
+    background: @primary-color;
+  }
+
+  .ant-picker-decade-panel,
+  .ant-picker-year-panel,
+  .ant-picker-quarter-panel,
+  .ant-picker-month-panel,
+  .ant-picker-week-panel,
+  .ant-picker-date-panel,
+  .ant-picker-time-panel {
+    width: 280px;
+  }
+  .ant-picker-decade-panel .ant-picker-content,
+  .ant-picker-year-panel .ant-picker-content,
+  .ant-picker-quarter-panel .ant-picker-content,
+  .ant-picker-month-panel .ant-picker-content {
+    height: 200px;
+  }
+  // .ant-picker-header > button {
+  //   font-size: 20px;
+  // }
+
+  .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+    background: @primary-color;
+  }
+  .ant-picker-cell-in-view.ant-picker-cell-today
+    .ant-picker-cell-inner::before {
+    border: 0; //today
+  }
+
+  .ant-picker-suffix {
+    height: 26px;
+    display: inline-flex;
+    margin-left: 5px;
+
+    .ant-divider-vertical {
+      right: 0;
+      top: 0;
+      float: left;
+      height: 26px;
+      border-left: 1px dotted #ddd;
+    }
+    .anticon {
+      margin-left: 8px;
+      margin-top: 7px;
+      color: #222;
+    }
+  }
+
+  //table
+  div.ant-table {
+    background: transparent;
+    // 低分辨率
+    width: calc(100% + 0px);
+  }
+
+  .bottom-table {
+    float: left;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 0;
+    box-shadow: @box-shadow;
+    margin-bottom: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+
+    .water-marker {
+      float: left;
+      width: 100%;
+    }
+    .qm-table-pagination ul {
+      margin-right: 0;
+    }
+    .tableBox {
+      border-radius: 5px;
+      float: left;
+      width: 100%;
+
+      .tableLeft {
+        width: 200px;
+      }
+    }
+  }
+
+  .qm-table-pagination {
+    margin: 0;
+    padding: 30px 0;
+    float: none;
+    float: left;
+    width: 100%;
+    ul {
+      float: right;
+      margin-right: 30px;
+    }
+  }
+
+  .ant-pagination-item-link {
+    line-height: 32px;
+  }
+
+  .ant-table-filter-column {
+    margin: 0;
+    .ant-table-filter-column-title {
+      padding: 0 15px 0 0;
+    }
+  }
+
+  .ant-pagination-options-quick-jumper input {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+  }
+  //button
+
+  .ant-btn {
+  }
+
+  .ant-btn-lg {
+    height: 40px;
+    padding: 6.4px 15px;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+
+  .ant-btn-sm {
+    height: 24px;
+    padding: 0px 7px;
+    font-size: 12px;
+    border-radius: 2px;
+  }
+
+  .ant-btn:hover,
+  .ant-btn:focus {
+    color: #ffbe14;
+    background: #fff;
+    border-color: #ffbe14;
+  }
+
+  .ant-btn:active,
+  .ant-btn.active {
+    color: #ffbe14;
+    background: #fff;
+    border-color: #ffbe14;
+  }
+
+  .ant-btn-primary {
+    color: #fff;
+    background: #ffbe14;
+    border-color: #ffbe14;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  }
+  .ant-btn-primary:hover,
+  .ant-btn-primary:focus {
+    color: #fff;
+    background: #ffcc03;
+    border-color: #ffcc03;
+  }
+
+  .ant-btn-link {
+    padding: 0;
+    border: 0;
+    color: #ffbe14;
+  }
+  .ant-btn-link:hover,
+  .ant-btn-link:focus {
+    color: #ffcc03;
+    background: transparent;
+    border-color: #ffcc03;
+    border: 0;
+  }
+  .ant-btn-link:hover span,
+  .ant-btn-link:focus span {
+    text-decoration: underline;
+  }
+
+  .ant-btn-text:hover,
+  .ant-btn-text:focus {
+    color: rgba(0, 0, 0, 0.65);
+    background: #f2f2f2;
+    border-color: #f2f2f2;
+  }
+
+  .ant-btn-dangerous {
+    color: #e7471d;
+    background: #fff;
+    border-color: #e7471d;
+  }
+  .ant-btn-dangerous:hover,
+  .ant-btn-dangerous:focus {
+    color: #ed6541;
+    background: #fff;
+    border-color: #ff0000;
+  }
+  .ant-btn-dangerous:active,
+  .ant-btn-dangerous.active {
+    color: #ed6541;
+    background: #fff;
+    border-color: #ed6541;
+  }
+  .ant-btn-dangerous.ant-btn-primary {
+    color: #fff;
+    background: #e7471d;
+    border-color: #e7471d;
+  }
+
+  .ant-btn-lg {
+    height: 40px;
+    padding: 6.4px 15px;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+  .ant-btn-sm {
+    height: 24px;
+    padding: 0px 7px;
+    font-size: 12px;
+    border-radius: 2px;
+  }
+
+  //select
+  .ant-select-selection-item {
+    text-overflow: initial;
+  }
+
+  //tooltip
+  .ant-tooltip-arrow::before {
+    background-color: transparent;
+  }
+
+  //ant-tabs-tab
+  .ant-tabs {
+    overflow: visible;
+    .ant-tabs-nav {
+      background: #f9f9f9;
+
+      .ant-tabs-nav-list {
+        .ant-tabs-tab {
+          float: left;
+          background: none;
+          font-size: 14px;
+          border-radius: 0;
+          border: 0;
+          border-top: 4px solid transparent;
+          border-right: 1px solid #f1f1f1;
+          color: #666;
+          margin: 0;
+          padding: 8px 16px;
+
+          &:hover {
+            // color: #111;
+            color: #ffbe14;
+          }
+          span .iconfont {
+            font-size: 12px;
+            margin-right: 5px;
+          }
+        }
+
+        .ant-tabs-tab-active {
+          background: #fff;
+          border-top: 4px solid @primary-color;
+          color: #111;
+
+          .ant-tabs-tab-btn {
+            color: #111;
+          }
+        }
+        .ant-tabs-tab-active:after {
+          content: "";
+          display: block;
+          background: url(../../public/images/base/navtabbg.png) no-repeat;
+          width: 6px;
+          height: 44px;
+          position: absolute;
+          left: 100%;
+          top: -4px;
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+
+  //menu
+  .ant-menu-inline-collapsed {
+    width: 50px;
+  }
+
+  //menu home
+  .qm-dark-sider {
+  }
+
+  //menu detail
+  .qm-light-sider {
+  }
+
+  .qm-light-sider {
+    .ant-menu-submenu-title {
+      .ant-menu-submenu-arrow::before {
+        background: @link-color;
+      }
+      .ant-menu-submenu-arrow::after {
+        background: @link-color;
+      }
+    }
+  }
+
+  //checkbox
+  .ant-checkbox-wrapper,
+  .ant-checkbox {
+    line-height: 1;
+  }
+
+  .qm-detail--content .tab-container {
+    margin-bottom: 15px;
+  }
+
+  //card
+  .ant-card {
+    margin-bottom: 15px !important;
+    border-radius: 0;
+    border: 0;
+    box-shadow: @box-shadow-1;
+
+    .ant-card-head {
+      min-height: inherit;
+      height: 42px;
+      line-height: 37px;
+      padding: 0;
+      background: #f9f9f9;
+
+      .ant-card-head-title {
+        padding: 0;
+        span {
+          float: left;
+          padding: 0 16px;
+          border-top: 4px solid @primary-color;
+          position: relative;
+          border-bottom: 1px solid #fff;
+          background: #fff;
+          border-right: 1px solid #f1f1f1;
+          color: #111;
+        }
+
+        span:after {
+          content: "";
+          display: block;
+          background: url(../../public/images/base/navtabbg.png) no-repeat;
+          width: 6px;
+          height: 44px;
+          position: absolute;
+          left: 100%;
+          top: -4px;
+          margin-left: 1px;
+        }
+
+        i.desc {
+          font-weight: normal;
+          font-size: 12px;
+          color: #999;
+          margin-left: 15px;
+          font-style: normal;
+          height: 42px;
+          padding-left: 10px;
+          display: flex;
+          align-self: center;
+          position: relative;
+
+          div {
+            white-space: normal;
+            word-break: break-all;
+            line-height: 18px;
+            align-self: center;
+          }
+        }
+      }
+      .ant-card-extra {
+        padding: 1px 10px 0 0;
+      }
+    }
+  }
+
+  //图例全选
+  .qm-charts--checkbox {
+    padding: 0 20px;
+  }
+
+  //back top
+  .ant-back-top {
+    right: 0;
+    bottom: 154px;
+
+    .ant-back-top-content {
+      background: #fff;
+      border-radius: 3px 0 0 3px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      text-align: center;
+
+      .ant-back-top-icon {
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        background: none;
+        color: #666;
+      }
+
+      &:hover {
+        background: #222;
+        .ant-back-top-icon {
+          color: #fff;
+          background: #222;
+        }
+      }
+    }
+  }
+  .qm-quality,
+  .qm-mode {
+    text-align: center;
+    width: 75px;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 2px;
+    background: rgba(255, 204, 3, 0.9);
+    padding: 0 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+  }
+  // HH #EB6950
+  // HM #F8CAC0
+  // Hl #FFEEAF
+  // ML #B3DDED
+  // MM #FDB62E
+  // MH #F8CAC0
+  // LL #39A8D6
+  // LM #B3DDED
+  // LH #FFEEAF
+  .quality-type {
+    &--1 {
+      background: #39a8d6;
+    }
+    &--2 {
+      background: #b3dded;
+    }
+    &--3 {
+      background: #b3dded;
+    }
+    &--4 {
+      background: #ffeeaf;
+    }
+    &--5 {
+      background: #fdb62e;
+    }
+    &--6 {
+      background: #ffeeaf;
+    }
+    &--7 {
+      background: #f8cac0;
+    }
+    &--8 {
+      background: #f8cac0;
+    }
+    &--9 {
+      background: #eb6950;
+    }
+  }
+  .mode-type {
+    &--1 {
+      background: rgba(237, 101, 65, 0.9);
+    }
+    &--2 {
+      background: rgba(237, 101, 65, 0.3);
+    }
+    &--3 {
+      background: rgba(255, 204, 3, 0.9);
+    }
+    &--4 {
+      background: rgba(255, 204, 3, 0.3);
+    }
+    &--5 {
+      background: rgba(35, 167, 219, 0.9);
+    }
+    &--6 {
+      background: rgba(35, 167, 219, 0.3);
+    }
+  }
+
+  //en
+  .qm-layout--en {
+    .qm-mode {
+      width: 95px;
+    }
+  }
+}
+
+// #root 外全局样式，如：modal组件
+body {
+  .ant-modal-body p.ico {
+    text-align: center;
+    line-height: 90px;
+  }
+  .qm-popover-card--item {
+    max-width: 250px;
+    z-index: 997;
+  }
+
+  .ant-popover-title {
+    color: @link-color;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .ant-modal-body p.ico span .icon-tousu {
+    font-size: 90px;
+    color: #999;
+    position: relative;
+    top: 20px;
+  }
+
+  .ant-modal-body p.mail {
+    text-align: center;
+  }
+
+  .ant-modal-body dl {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .ant-modal-body dl dt {
+    float: left;
+    width: 40%;
+  }
+
+  .ant-modal-body dl dd {
+    display: block;
+    margin-left: 50%;
+  }
+
+  .ant-modal-content {
+    border-top: 3px solid #ffbe14;
+  }
+  li {
+    list-style: none;
+  }
+  .qm-popover-card--item .ant-popover-inner {
+    border-top: 4px solid #ffbe14;
+  }
+  .qm-popover-card--item .ant-popover-content .ant-popover-arrow {
+    border-left-color: #ffbe14;
+    border-top-color: #ffbe14;
+  }
+}
+
+::selection {
+  background: cornflowerblue;
+}

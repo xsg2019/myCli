@@ -1,0 +1,435 @@
+.table-box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.qm-table-pagination {
+  text-align: right;
+  margin: 30px;
+  float: right;
+}
+#rc-tabs-0-panel-1 {
+}
+
+.tableBox {
+  margin: 30px 30px 0;
+  position: relative;
+  .table-box-shadow;
+  border-radius: 5px;
+  table tbody tr:nth-child(2n) {
+    background: rgba(195, 195, 195, 0.1);
+  }
+
+  table thead tr th {
+    white-space: nowrap;
+    background: #374850;
+    color: #fff;
+    font-weight: normal;
+    line-height: 24px;
+    padding: 10px;
+    border-right: 1px solid #555;
+    font-size: 14px;
+    height: 45px;
+  }
+  table thead tr th:last-child,
+  table tbody tr td:last-child {
+    border-right: 0;
+  }
+  table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table thead tr th.subtitle {
+    background: #eee !important;
+    color: #111;
+    border-right: 1px solid #ddd;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #ddd;
+  }
+  table thead tr th.subtitle a {
+    color: #111;
+  }
+  table thead tr th.subtitle a.active {
+    color: #f99b1c;
+  }
+
+  .ant-spin-container {
+    .ant-table {
+      border-top-left-radius: 10px;
+    }
+  }
+
+  .tableLeft {
+    float: left;
+    width: 358px;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+    .ant-table-container table > thead > tr:first-child th:last-child {
+      border-top-right-radius: 0px;
+    }
+
+    .ant-table-container table > thead > tr:first-child th:first-child {
+      border-top-left-radius: 5px;
+    }
+
+    z-index: 8;
+  }
+
+  .tableMiddle,
+  .tableRMiddle,
+  .tableRight {
+    .ant-table-container table > thead > tr:first-child th:last-child {
+      border-top-right-radius: 0px;
+    }
+
+    .ant-table-container table > thead > tr:first-child th:first-child {
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+    .ant-dropdown {
+      z-index: 9;
+    }
+  }
+ 
+  .tableMiddle {
+    width: 0px;
+  }
+  .tableMiddle,
+  .tableRMiddle {
+    transition: all 0.2s;
+    float: left;
+
+    position: relative;
+    z-index: 7;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+    .trend-table-head{
+      width: 250px;
+    }
+    .ant-table-content {
+      overflow: hidden;
+    }
+  }
+
+  .tableRight {
+    overflow-x: auto;
+
+    .icon-jt-down {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.tableBox .tableRMiddle tr th i.icon-jt-down {
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 3px;
+  
+}
+
+
+
+.tableBox table tbody tr td {
+  white-space: nowrap;
+  line-height: 24px;
+  padding: 10px;
+  border-right: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  font-size: 14px;
+}
+
+.tableBox table thead tr th a {
+  color: #fff;
+}
+
+.tableBox table thead tr th a:hover,
+.tableBox table thead tr th a.active {
+  color: @primary-color;
+}
+
+.tableBox .tableRight table tr td span.percent {
+  width: 60px;
+  height: 24px;
+  overflow: hidden;
+  background: #f8f8f8;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: inset 0 3px 3px 3px #eee;
+  float: right;
+}
+.tableBox .tableRight table tr td span.percent::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 24px;
+  border: 1px solid #cecece;
+  z-index: 1;
+}
+.tableBox .tableRight table tr td span.percent em {
+  display: block;
+  width: 60px;
+  height: 24px;
+  margin: 0px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(left, #ffbe14 40%, #ffcc03);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.tableBox .tableRight table tr td span.percent i {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  line-height: 24px;
+  color: #333;
+  font-size: 12px;
+  font-style: normal;
+  width: 100%;
+  text-align: left;
+  border-radius: 2px;
+  z-index: 3;
+}
+
+.tableBox table thead tr th a i.fa {
+  padding-left: 5px;
+}
+
+.tableBox .tableRight {
+  border-right: 1px solid #ddd;
+}
+
+.tableBox .tableRight table tbody tr td {
+  text-align: right;
+  // height:45px;
+}
+
+.tableBox .tableRight table tbody tr td.left {
+  text-align: left;
+}
+
+.tableBox .tableRight table tbody tr td.center {
+  text-align: center;
+}
+
+.tableBox .tableLeft table thead tr th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+.tableBox .tableRight {
+  border-radius: 0 5px 5px 0;
+}
+
+.tableBox .tableRight table {
+  text-align: right;
+}
+
+.tableBox .tableRight table tr th:first-child {
+  // padding-left: 25px;
+}
+
+.tableBox .tableRight table tr td span.down {
+  color: #039919;
+}
+
+.tableBox .tableRight table tr td span.down i.fa {
+  padding-left: 5px;
+}
+
+.tableBox .tableRight table tr td span.up {
+  color: #be1919;
+}
+
+.tableBox .tableRight table tr td span.up i.fa {
+  padding-left: 5px;
+}
+
+.tableBox table td .appName {
+  float: left;
+  height: 24px;
+  overflow: hidden;
+}
+
+.tableBox table td a.table-company {
+  float: left;
+  width: 210px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tableBox table td .appName a {
+  display: block;
+  color: #111;
+  padding-right: 0px;
+  float: left;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tableBox table td .appName .ico {
+  float: left;
+  font-size: 0;
+  margin-right: 5px;
+}
+
+.tableBox table td .appName .ico img {
+  border-radius: 3px;
+}
+
+.tableBox table td {
+  i.icon-collect,
+  i.icon-collected {
+    font-size: 20px;
+    display: block;
+  }
+
+  i.icon-collect {
+    &:hover {
+      color: @primary-color;
+      cursor: pointer;
+    }
+  }
+
+  i.icon-collected {
+    cursor: pointer;
+    color: @primary-color;
+  }
+}
+
+.tableBox a.toggle {
+  display: block;
+  width: 34px;
+  height: 44px;
+  position: absolute;
+  right:0px;
+  top: 1px;
+  z-index: 9;
+}
+
+.tableBox a.toggle span {
+  display: block;
+  width: 50px;
+  height: 42px;
+  background: url(../../../public/images/base/table-toggle2.png) no-repeat;
+}
+
+.tableBox a.toggle.bnclose {
+  right: -34px;
+}
+
+.tableBox a.toggle.bnclose span {
+  display: block;
+  width: 30px;
+  height: 42px;
+  background: url(../../../public/images/base/table-toggle1.png) no-repeat;
+}
+
+.ant-table tbody > tr.ant-table-row:hover > td {
+  background: transparent;
+}
+
+.ant-table tbody > tr.ant-table-row-selected :hover > td,
+.tableBox table tbody tr.high {
+  background: rgba(255, 204, 3, 0.1) !important;
+}
+
+
+
+//en table 
+.qm-layout--en {
+
+
+  
+
+
+  .tableBox .tableRMiddle {
+    width:200px;
+  }
+
+  .tableBox .tableRMiddle tr th {
+    padding:3px 10px 3px 20px;
+    white-space:normal;
+    line-height: 17px;
+  
+    span {
+      float: left;;
+      width:150px;
+      word-wrap:break-word;
+      line-height: 17px;
+    }
+    i.icon-jt-down {
+      float: left;
+      margin-top:7px;
+    }
+  }
+
+
+  .tableBox table td {
+
+    .table-class--category {
+      display: block;
+      width: 70px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .table-class--sub_category {
+      display: block;
+      width: 70px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .table-class--subCategory {
+      display: block;
+      width: 140px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align:left;
+    }
+
+
+    .table-company {
+      display: block;
+      width: 170px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+  
+
+    .en_app {
+      display: block;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    // .appName {
+    //   a {
+    //     width:160px
+    //   }
+    // }
+
+  }
+
+}
+
+
+@media screen and (min-width: 1366px) {
+  /* 浏览器高度大于1366px时 */
+  .qm-layout--en .collectRight .tableBox table td .table-class--category {
+    width: 120px;
+  }
+
+  .qm-layout--en .collectRight .tableBox table td .table-class--subCategory {
+    width:200px;
+  }
+}
